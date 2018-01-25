@@ -31,6 +31,10 @@
         margin-bottom: 0;
     }
 
+    .post__image img {
+        margin-bottom: 0;
+    }
+
     .post__content {
         flex: 1 1 auto;
         max-width: calc(100% - 150px);
