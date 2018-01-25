@@ -8,7 +8,7 @@ fetch('https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wo
                 <div class="post">
                     <div class="post__image">
                         <a href="/post?post_id=${post.ID}">
-                            <img src="${post.featured_image}"/>
+                            <img src="${post.featured_image}" alt=""/>
                         </a> 
                     </div>
                     <div class="post__content">

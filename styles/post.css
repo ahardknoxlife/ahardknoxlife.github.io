@@ -1,0 +1,15 @@
+.post__author {
+    display: block;
+    font-size: 1.2em;
+}
+
+.post__author__img {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.post__date {
+    display: block;
+    font-size: .75em;
+}
