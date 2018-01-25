@@ -11,6 +11,11 @@
     margin-right: 10px;
 }
 
+.post__author__name {
+    line-height: 50px;
+    vertical-align: top;
+}
+
 .post__date {
     display: block;
     font-size: .75em;

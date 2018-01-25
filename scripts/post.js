@@ -17,7 +17,5 @@ fetch(`https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wo
                 
             `;
         postContainer.innerHTML = htmlString;
-        console.log(data);
-            
     })
 })

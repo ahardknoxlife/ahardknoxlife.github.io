@@ -3,7 +3,6 @@ fetch('https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wo
         var postsContainer = document.querySelector('.posts-container'),
             htmlString = ``;
         data.posts.map(function(post, index) {
-            console.log(post)
             htmlString = htmlString + `
                 <div class="post">
                     <div class="post__image">
