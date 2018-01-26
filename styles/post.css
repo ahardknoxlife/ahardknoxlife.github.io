@@ -20,3 +20,16 @@
     display: block;
     font-size: .75em;
 }
+
+.post__social {
+    float: right;
+}
+
+.post__social__link {
+
+}
+
+.post__social__link img {
+    height: 30px;
+    width: 30px;
+}
