@@ -38,7 +38,7 @@ fetch(`https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wo
             htmlString = `
                 <h2 class="page-header">${data.title}</h2>
                 <div class="post__social">
-                    <a class="post__social__link" target="_blank" href="https://www.facebook.com/sharer.php?caption=${data.excerpt}&description=${data.title}&u=${encodeURIComponent(window.location.href)}&picture=${data.featured_image}">
+                    <a class="post__social__link" target="_blank" href="https://www.facebook.com/sharer.php?description=${data.title}&u=${encodeURIComponent(window.location.href)}&picture=${data.featured_image}">
                         <img src="/images/facebook.svg" alt="Share on Facebook"/>
                     </a>
                     <a class="post__social__link" target="_blank" href="https://pinterest.com/pin/create/button/?url=${encodeURIComponent(window.location.href)}&media=${data.featured_image}&description=${data.title}">
