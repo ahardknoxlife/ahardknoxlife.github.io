@@ -1,37 +1,41 @@
 let post_id = window.location.search.substring(window.location.search.indexOf('=') + 1, window.location.search.length);
 
+window.fbAsyncInit = function() {
+	FB.init({
+	  appId            : '400253963746001',
+	  autoLogAppEvents : true,
+	  xfbml            : true,
+	  version          : 'v2.10'
+	});
+	FB.AppEvents.logPageView();
+  };
+ 
+  (function(d, s, id){
+	 var js, fjs = d.getElementsByTagName(s)[0];
+	 if (d.getElementById(id)) {return;}
+	 js = d.createElement(s); js.id = id;
+	 js.src = "//connect.facebook.net/en_US/sdk.js";
+	 fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
 fetch(`https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wordpress.com/posts/${post_id}`).then(function(data){
     data.json().then(function(data) {
-        let head = document.querySelector('head'),
-            ogURL = document.createElement('meta'),
-            ogType = document.createElement('meta'),
-            ogTitle = document.createElement('meta'),
-            ogDesc = document.createElement('meta'),
-            ogImg = document.createElement('meta');
+        
 
-            ogURL.setAttribute('property', 'og:url');
-            ogURL.setAttribute('content', window.location.href);
-
-            ogType.setAttribute('property', 'og:type');
-            ogType.setAttribute('content', 'article');
-
-            ogTitle.setAttribute('property', 'og:title');
-            ogTitle.setAttribute('content', data.title);
-
-            ogType.setAttribute('property', 'og:type');
-            ogType.setAttribute('content', 'article');
-
-            ogDesc.setAttribute('property', 'og:description');
-            ogDesc.setAttribute('content', data.excerpt);
-
-            ogImg.setAttribute('property', 'og:image');
-            ogImg.setAttribute('content', data.featured_image);
-
-        head.appendChild(ogURL);
-        head.appendChild(ogType);
-        head.appendChild(ogTitle);
-        head.appendChild(ogDesc);
-        head.appendChild(ogImg);
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.shares',
+            action_properties: JSON.stringify({
+                object: {
+                    'og:url': window.location.href,
+                    'og:title': data.title,
+                    'og:image': data.featured_image
+                }
+            })
+        },
+        function (response) {
+        // Action after response
+        });
 
 
         var postContainer = document.querySelector('.site-content'),
