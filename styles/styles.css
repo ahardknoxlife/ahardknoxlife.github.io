@@ -95,6 +95,25 @@ a:hover, a:visited, a:active {
     margin-top: 0;
 }
 
+.site-footer {
+    background: #4B5570;
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+    border-top: 5px dotted #f9dada;
+    box-shadow: 0 0 0px 10px #4B5570;
+}
+
+.site-footer a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.site-footer__social img {
+    width: 40px;
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 800px) {
     .header-img {
         max-height: 400px;
