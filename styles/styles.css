@@ -100,8 +100,14 @@ a:hover, a:visited, a:active {
     width: 100%;
     padding: 70px 0;
     text-align: center;
-    border-top: 5px dotted #f9dada;
+    
     box-shadow: 0 0 0px 10px #4B5570;
+    border-style: dotted;
+    border-color: #FCDBDB;
+    border-width: 10px 0 0 0;
+    border-image-source: url(/images/blush-circle.svg);
+    border-image-slice: 100% 0%;
+    border-image-repeat: round;
 }
 
 .site-footer a {
