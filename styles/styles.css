@@ -106,7 +106,7 @@ a:hover, a:visited, a:active {
     border-color: #FCDBDB;
     border-width: 10px 0 0 0;
     border-image-source: url(/images/blush-circle.svg);
-    border-image-slice: 100% 0%;
+    border-image-slice: 33% 33%;
     border-image-repeat: round;
 }
 
