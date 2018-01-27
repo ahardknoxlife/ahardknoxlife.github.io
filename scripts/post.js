@@ -20,6 +20,7 @@ window.fbAsyncInit = function() {
  
 fetch(`https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wordpress.com/posts/${post_id}`).then(function(data){
     data.json().then(function(data) {
+        console.log(data);
         var postContainer = document.querySelector('.site-content'),
             htmlString = `
                 <h2 class="page-header">${data.title}</h2>
@@ -52,7 +53,8 @@ fetch(`https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wo
                     object: {
                         'og:url': window.location.href,
                         'og:title': data.title,
-                        'og:image': data.featured_image
+                        'og:image': data.featured_image,
+                        'og:desc': data.excerpt
                     }
                 })
             },
