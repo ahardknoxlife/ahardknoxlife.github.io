@@ -54,7 +54,7 @@ fetch(`https://public-api.wordpress.com/rest/v1.1/sites/ahardknoxlife28994277.wo
                         'og:url': window.location.href,
                         'og:title': data.title,
                         'og:image': data.featured_image,
-                        'og:desc': data.excerpt
+                        'og:description': data.excerpt
                     }
                 })
             },
