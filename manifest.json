@@ -1,0 +1,20 @@
+{
+  "short_name": "A Hard Knox Life",
+  "name": "A Hard Knox Life",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#4B5570",
+  "display": "standalone",
+  "theme_color": "#668aef"
+}
