@@ -3,12 +3,12 @@
   "name": "A Hard Knox Life",
   "icons": [
     {
-      "src": "/images/logo.png",
+      "src": "/images/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/logo.png",
+      "src": "/images/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
