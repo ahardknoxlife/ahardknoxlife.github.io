@@ -1,27 +1,34 @@
 <html lang="en-US">
     <head>
-        <script async="false" src="/scripts/post.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
         <meta charset="utf-8" />
+        <meta name="theme-color" content="#4B5570"/>
+        <meta name="Description" content="Blogs, articles, pictures, and ideas written by Alicia Powell">
+        <link rel="apple-touch-icon" sizes="192x192" href="/images/logo192.png">
+        <link rel="icon" type="image/png" href="/images/logo192.png">
+        <link rel="manifest" href="/manifest.json"/>
         <link rel="stylesheet" href="/styles/styles.css"/>
-        <link rel="stylesheet" href="/styles/post.css"/>
+        <link rel="stylesheet" href="/styles/posts.css"/>
         <title>A Hard Knox Life</title>
-        
     </head>
     <body>
         <div class="container">
             <header class="site-header">
-                    <a href="/">
-                        <h1 class="site-logo">
-                            Hard Knox Cakes
-                        </h1>
-                    </a>
+                <a href="/">
+                    <h1 class="site-logo">
+                        Hard Knox Cakes
+                    </h1>
+                </a>
                 <nav class="site-nav">
                     <a href="/blog">Blog</a>
                 </nav>
             </header>
+            <h2 class="page-header">Blog Posts</h2>
             <div class="site-content">
-            
+                
+                <div class="posts-container">
+
+                </div>
             </div>
         </div>
         <footer class="site-footer">
@@ -44,6 +51,20 @@
                 </a>
             </div>
         </footer>
-        
+        <script src="/scripts/posts.js"></script>
+        <script>
+            if (('serviceWorker' in navigator) && typeof window !== 'undefined') {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(
+                        function(registration) {
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }, 
+                        function(err) {
+                            console.log('ServiceWorker registration failed: ', err);
+                        }
+                    );
+                })
+            }
+        </script>
     </body>
 </html>
