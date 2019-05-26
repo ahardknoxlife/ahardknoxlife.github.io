@@ -1,6 +1,9 @@
 
 <svg width="869px" height="562px" viewBox="0 0 869 562" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs><style>@import url('https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSacramento%26display%3Dswap');</style></defs>
+    <defs><style>@font-face {
+      font-family: Sacramento;
+      src: url('https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSacramento%26display%3Dswap');
+    }</style></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Logo">
             <rect id="Rectangle" stroke="#979797" fill="#5D3A26" x="54.5" y="52.5" width="334" height="210" rx="9"></rect>
