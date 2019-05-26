@@ -107,7 +107,7 @@ a:hover, a:visited, a:active {
     flex: 0 0 100%;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-right: 5px;
     order: 2;
 }
