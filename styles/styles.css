@@ -94,9 +94,7 @@ a:hover, a:visited, a:active {
 }
 
 .request {
-    grid-column: 1 / span 3;
     margin-bottom: 50px;
-    
 }
 
 .request-title {
@@ -152,12 +150,15 @@ a:hover, a:visited, a:active {
 
 
 @media screen and (min-width: 700px) {
+    .request {
+        grid-column: 1 / span 2;
+    }
     .contact-container {
         flex-wrap: nowrap;
     }
 
     .site-content {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
     }
 
@@ -173,4 +174,15 @@ a:hover, a:visited, a:active {
         width: 40px;
     }
     
+}
+
+@media screen and (min-width: 1200px) {
+    .request {
+        grid-column: 1 / span 3;
+    }
+
+    .site-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+    }
 }
