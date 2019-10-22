@@ -1,4 +1,4 @@
-var CACHE_NAME = 'ahardknoxlife-cache';
+var CACHE_NAME = 'hardknoxcakes-cache';
 var urlsToCache = [
 	'/'
 ];
