@@ -95,6 +95,15 @@ a:hover, a:visited, a:active {
 
 .request {
     margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #ffcd1f;
+}
+
+.request svg {
+    fill: #ffcd1f;
+    height: 20px;
+    vertical-align: bottom;
+    margin-right: 10px;
 }
 
 .request-title {
